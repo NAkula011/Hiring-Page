@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Agriculture-Tech Team at Electroculture!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #eef7ec;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(rgba(0, 128, 0, 0.6), rgba(0, 128, 0, 0.6)), url('https://example.com/greenery-background.jpg') no-repeat center;
+            background-size: cover;
+            color: #fff;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+
+        .cta-button {
+            background-color: #28a745;
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: fadeInUp 1.4s ease forwards;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #218838;
+        }
+
+        /* Positions Section */
+        .positions {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .positions h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2c6e49;
+        }
+
+        .position-card {
+            background-color: #f8f9fc;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .position-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .position-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #28a745;
+        }
+
+        .position-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .apply-button {
+            background-color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s ease, background-color 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .apply-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Application Form */
+        .application-form {
+            padding: 50px 20px;
+            background-color: #eef6f8;
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .application-form h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #2c6e49;
+        }
+
+        .application-form form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            animation: slideIn 0.6s ease;
+        }
+
+        .application-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c6e49;
+        }
+
+        .application-form input,
+        .application-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-button {
+            background-color: #2ecc71;
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            transition: transform 0.2s ease;
+        }
+
+        .submit-button:hover {
+            transform: scale(1.05);
+            background-color: #27ae60;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Join Our Agriculture-Tech Revolution</h1>
+        <p>At Electroculture, we merge technology and agriculture to nurture a sustainable future. Become part of our green mission!</p>
+        <button onclick="scrollToPositions()" class="cta-button">Explore Opportunities</button>
+    </section>
+
+    <!-- Available Positions Section -->
+    <section class="positions" id="positions">
+        <h2>Open Positions</h2>
+
+        <!-- Position Cards -->
+        <div class="position-card">
+            <h3>AI Researcher</h3>
+            <p>Help us build AI models to optimize growth and improve our agricultural solutions.</p>
+            <button onclick="openApplyForm('AI Researcher')" class="apply-button">Apply Now</button>
+        </div>
+
+        <div class="position-card">
+            <h3>IoT Engineer</h3>
+            <p>Create IoT-driven solutions for real-time plant monitoring and data analysis.</p>
+            <button onclick="openApplyForm('IoT Engineer')" class="apply-button">Apply Now</button>
+        </div>
+
+        <div class="position-card">
+            <h3>Web Developer</h3>
+            <p>Develop a digital presence that connects technology, plants, and people worldwide.</p>
+            <button onclick="openApplyForm('Web Developer')" class="apply-button">Apply Now</button>
+        </div>
+
+        <div class="position-card">
+            <h3>Embedded System Engineer</h3>
+            <p>Design smart embedded systems to support our advanced agricultural devices.</p>
+            <button onclick="openApplyForm('Embedded System Engineer')" class="apply-button">Apply Now</button>
+        </div>
+
+        <div class="position-card">
+            <h3>3D Modeler</h3>
+            <p>Bring our designs to life with realistic 3D models and innovative product prototypes.</p>
+            <button onclick="openApplyForm('3D Modeler')" class="apply-button">Apply Now</button>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-form" id="applyForm">
+        <h2>Apply Now</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="position">Position</label>
+            <input type="text" id="position" readonly>
+
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" required>
+
+            <label for="coverLetter">Cover Letter (optional)</label>
+            <textarea id="coverLetter" rows="4"></textarea>
+
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+    </section>
+
+    <script>
+        function scrollToPositions() {
+            document.getElementById("positions").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function openApplyForm(position) {
+            document.getElementById("applyForm").style.display = "block";
+            document.getElementById("position").value = position;
+            document.getElementById("applyForm").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
