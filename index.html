@@ -206,31 +206,31 @@
         <div class="position-card">
             <h3>AI Researcher</h3>
             <p>Help us build AI models to optimize growth and improve our agricultural solutions.</p>
-            <button onclick="openApplyForm('AI Researcher')" class="apply-button">Apply Now</button>
+            <button onclick="redirectToGoogleForm()" class="apply-button">Apply Now</button>
         </div>
 
         <div class="position-card">
             <h3>IoT Engineer</h3>
             <p>Create IoT-driven solutions for real-time plant monitoring and data analysis.</p>
-            <button onclick="openApplyForm('IoT Engineer')" class="apply-button">Apply Now</button>
+            <button onclick="redirectToGoogleForm()" class="apply-button">Apply Now</button>
         </div>
 
         <div class="position-card">
             <h3>Web Developer</h3>
             <p>Develop a digital presence that connects technology, plants, and people worldwide.</p>
-            <button onclick="openApplyForm('Web Developer')" class="apply-button">Apply Now</button>
+            <button onclick="redirectToGoogleForm()" class="apply-button">Apply Now</button>
         </div>
 
         <div class="position-card">
             <h3>Embedded System Engineer</h3>
             <p>Design smart embedded systems to support our advanced agricultural devices.</p>
-            <button onclick="openApplyForm('Embedded System Engineer')" class="apply-button">Apply Now</button>
+            <button onclick="redirectToGoogleForm()" class="apply-button">Apply Now</button>
         </div>
 
         <div class="position-card">
             <h3>3D Modeler</h3>
             <p>Bring our designs to life with realistic 3D models and innovative product prototypes.</p>
-            <button onclick="openApplyForm('3D Modeler')" class="apply-button">Apply Now</button>
+            <button onclick="redirectToGoogleForm()" class="apply-button">Apply Now</button>
         </div>
     </section>
 
@@ -262,10 +262,9 @@
             document.getElementById("positions").scrollIntoView({ behavior: "smooth" });
         }
 
-        function openApplyForm(position) {
-            document.getElementById("applyForm").style.display = "block";
-            document.getElementById("position").value = position;
-            document.getElementById("applyForm").scrollIntoView({ behavior: "smooth" });
+        function redirectToGoogleForm() {
+            const googleFormUrl = 'https://forms.gle/4sk9zxTRg7wyiXDb9'; // Google Form link
+            window.location.href = googleFormUrl;
         }
     </script>
 </body>
